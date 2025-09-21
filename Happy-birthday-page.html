@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1020;
+      --card:#111226;
+      --accent:#ff6b6b;
+      --accent-2:#ffd166;
+      --glass: rgba(255,255,255,0.06);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Poppins',system-ui,Arial;}
+    body{
+      background: linear-gradient(180deg,var(--bg) 0%, #1b1330 60%);
+      display:flex;align-items:center;justify-content:center;padding:40px;
+      color:#f7f7fb;
+    }
+
+    .card{
+      width:min(920px,96vw);
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border-radius:18px;
+      padding:36px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      position:relative;overflow:hidden;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .confetti{
+      position:absolute;inset:0;pointer-events:none;overflow:hidden;
+    }
+    .confetti span{
+      position:absolute;display:block;width:10px;height:14px;border-radius:2px;opacity:0.95;
+      animation: drop 6s linear infinite;
+    }
+    .c1{left:4%;background:#ffd166;animation-delay:0s;animation-duration:5.2s}
+    .c2{left:12%;background:#ef476f;animation-delay:0.3s;animation-duration:6.1s}
+    .c3{left:20%;background:#06d6a0;animation-delay:0.6s;animation-duration:5.7s}
+    .c4{left:28%;background:#ffd166;animation-delay:1s;animation-duration:6.4s}
+    .c5{left:36%;background:#118ab2;animation-delay:1.4s;animation-duration:5.9s}
+    .c6{left:44%;background:#ef476f;animation-delay:1.8s;animation-duration:6.6s}
+    .c7{left:52%;background:#ffd166;animation-delay:2.1s;animation-duration:5.4s}
+    .c8{left:60%;background:#06d6a0;animation-delay:2.6s;animation-duration:6.2s}
+    .c9{left:68%;background:#118ab2;animation-delay:3s;animation-duration:5.8s}
+    .c10{left:76%;background:#ef476f;animation-delay:3.4s;animation-duration:6.3s}
+    .c11{left:84%;background:#ffd166;animation-delay:3.8s;animation-duration:5.6s}
+    .c12{left:92%;background:#06d6a0;animation-delay:4.1s;animation-duration:6.0s}
+
+    @keyframes drop{
+      0%{transform:translateY(-20vh) rotate(0) scale(1)}
+      50%{transform:translateY(40vh) rotate(180deg) scale(0.9);opacity:1}
+      100%{transform:translateY(110vh) rotate(360deg) scale(0.8);opacity:0.9}
+    }
+
+    .top{display:flex;gap:20px;align-items:center;margin-bottom:18px;}
+    .badge{background:linear-gradient(135deg,var(--accent),var(--accent-2));padding:10px 14px;border-radius:12px;font-weight:800;font-size:14px;box-shadow:0 6px 18px rgba(255,103,103,0.14);}
+
+    h1{margin:0;font-family:'Great Vibes',cursive;font-size:56px;line-height:1;color:#fff;text-shadow:0 6px 28px rgba(0,0,0,0.6);}
+    p.lead{margin:8px 0 22px;color:rgba(255,255,255,0.85);font-size:16px}
+
+    .panel{display:flex;gap:20px;align-items:center;justify-content:space-between;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;border:1px solid rgba(255,255,255,0.03);}
+
+    .message{flex:1;padding-right:12px;}
+    .message p{margin:0 0 12px;font-size:15px}
+
+    .btn{background:linear-gradient(135deg,var(--accent),#ff8474);padding:12px 16px;border-radius:10px;color:#fff;font-weight:700;text-decoration:none;display:inline-block;box-shadow:0 8px 20px rgba(255,104,104,0.16);border:0;cursor:pointer;}
+
+    .note{margin-top:18px;color:rgba(255,255,255,0.6);font-size:13px}
+
+    .photo{
+      margin-top:20px;
+      text-align:center;
+    }
+    .photo img{
+      width:100%;
+      max-width:300px;
+      border-radius:12px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.5);
+      display:block;
+      margin:0 auto;
+    }
+
+    @media (max-width:620px){
+      h1{font-size:36px}
+      .panel{flex-direction:column;align-items:flex-start}
+      .top{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="confetti" aria-hidden="true">
+      <span class="c1"></span><span class="c2"></span><span class="c3"></span>
+      <span class="c4"></span><span class="c5"></span><span class="c6"></span>
+      <span class="c7"></span><span class="c8"></span><span class="c9"></span>
+      <span class="c10"></span><span class="c11"></span><span class="c12"></span>
+    </div>
+
+    <div class="top">
+      <div class="badge">Happy Birthday</div>
+      <div>
+        <h1>Happy Birthday, Rakesh!</h1>
+        <p class="lead">Wishing you a day filled with love, laughter and all your favorite things.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="message">
+        <p style="font-size:18px;margin-bottom:8px">Hey <strong>Rakesh</strong> —</p>
+        <p>May your year ahead be full of bright moments, new adventures and little joys every day. Enjoy this special day and celebrate the amazing person you are.</p>
+        <p style="margin-top:12px"><em>With love,</em><br><strong>Anil</strong></p>
+      </div>
+      <div style="min-width:150px;text-align:center">
+        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2c1.104 0 2 .896 2 2v1h4a1 1 0 011 1v3.5a2.5 2.5 0 01-2.5 2.5H15v1a3 3 0 11-6 0v-1H6.5A2.5 2.5 0 014 9.5V6a1 1 0 011-1h4V4c0-1.104.896-2 2-2z" stroke="white" stroke-width="0.6" opacity="0.95"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="photo">
+      <img src="Screenshot_2025-09-21-12-21-10-035_com.whatsapp-edit.jpg" alt="Birthday Friend Photo">
+  </div>
+</body>
+</html>
